@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+        <div id="login-section">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="admin-section" style="display: none;">
+            <h2>All Users (Admin Only)</h2>
+            <button onclick="fetchAllUsers()">Fetch All Users</button>
+            <ul id="user-list"></ul>
+        </div>
+        <div id="user-section" style="display: none;">
+            <h2>Update User Info</h2>
+            <input type="text" id="new-username" placeholder="New Username">
+            <input type="password" id="new-password" placeholder="New Password">
+            <button onclick="updateUser()">Update</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
